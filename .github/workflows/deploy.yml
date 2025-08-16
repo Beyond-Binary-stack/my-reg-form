@@ -3,7 +3,7 @@ name: Deploy PHP App to InfinityFree
 on:
   push:
     branches:
-      - main   # or master if your default branch is master
+      - main
 
 jobs:
   ftp-deploy:
@@ -20,4 +20,4 @@ jobs:
           username: ${{ secrets.INF_USER }}
           password: ${{ secrets.INF_PASS }}
           server-dir: /htdocs
-          local-dir: ./
+          local-dir: ./RegForm
